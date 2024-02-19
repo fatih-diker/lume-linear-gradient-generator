@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Shotcut Icon -->
+    <link rel="shotcut icon" type="image" href="assets/logo.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lume</title>
+</head>
+
+<body>
+
+    <!-- Sample Texts -->
+    <div id="samples" class="sample-text">
+        <p id="black">Black Text</p>
+        <p id="black-shadow">Shadow</p>
+        <p id="white">White Text</p>
+        <p id="white-shadow">Shadow</p>
+    </div>
+
+    <!-- Main -->
+    <div class="container glass">
+        <div class="row options">
+
+            <div class="directions">
+                <div class="select-box">
+                    <select>
+                        <option value="to top">Top</option>
+                        <option value="to right top">Right top</option>
+                        <option value="to right">Right</option>
+                        <option value="to right bottom">Right bottom</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to left bottom">Left bottom</option>
+                        <option value="to left">Left</option>
+                        <option value="to left top" selected>Left top</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="colors">
+                <div class="inputs">
+                    <input type="color" value="#5665E9">
+                    <input type="color" value="#A271F8">
+                </div>
+            </div>
+        </div>
+        <div class="row result">
+            <textarea readonly disabled>background: linear-gradient(to left top, #9f47a0, #26108a);</textarea>
+            <button class="copy">
+                <p id="copy-tooltip">Copy to Clipboard</p>
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+
+        <div class="row buttons">
+            <button id="random" class="random">Randomly Generate</button>
+            <button id="show-text" class="show-text" onclick="showSamples()">
+                <p>Show/Hide Texts</p>
+                <i class="fa-solid fa-eye-slash" id="eye-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
