@@ -19,6 +19,7 @@ body {
     position: relative;
 }
 
+/* Sample Texts */
 .sample-text {
     position: absolute;
     top: 50%;
@@ -52,6 +53,7 @@ body {
     text-shadow: 1px 1px 0 #444;
 }
 
+/* Main */
 .container {
     max-width: 1200px;
     width: 85%;
@@ -287,6 +289,8 @@ textarea {
     opacity: 1;
 }
 
+
+/* Media Queries */
 @media only screen and (max-width: 991px) {
     .container {
         padding: 20px;
